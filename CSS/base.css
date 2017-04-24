@@ -38,7 +38,7 @@ input {
 }
 .ckearfix::before,
 .clearfix::after {
-	.content: "";
+	content: "";
 	height: 0;
 	line-height: 0;
 	display: block;

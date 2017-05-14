@@ -1,0 +1,318 @@
+
+body {
+    background: #f5f5f5;
+}
+
+/* 主体部分 */
+.jd-layout {
+    width: 100%;
+    max-width: 640px; /* 设计图的原因，不然它放大 */
+    min-width: 300px; /* 为了更好的布局 */
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 头部搜索 */
+.jd-header {
+    position: fixed; /* 是以window最外层容器计算 */
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.jd-header > .jd-headerBox {
+    width: 100%;
+    height: 40px;
+    max-width: 640px; /* 设计图的原因，不然它放大 */
+    min-width: 300px; /* 为了更好的布局 */
+    margin: 0 auto;
+    background: rgba(201, 21, 35, 0.85);
+    position: relative;
+
+}
+
+.jd-header > .jd-headerBox > .icon-logo {
+    width: 60px;
+    height: 36px;
+    position: absolute;
+    background-position: 0 -103px;
+    top: 4px;
+    left: 10px;
+}
+
+.jd-header > .jd-headerBox > .login {
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.jd-header > .jd-headerBox > form {
+    width: 100%;
+    padding-left: 75px;
+    padding-right: 50px;
+    height: 40px;
+    position: relative;
+}
+
+.jd-header > .jd-headerBox > form > input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px; /* 圆角 */
+    margin-top: 5px;
+    padding-left: 30px;
+}
+
+.jd-header > .jd-headerBox > form > .icon-search {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-position: -60px -109px;
+    top: 10px;
+    left: 85px;
+}
+
+/* 轮播图 */
+.jd-banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.jd-banner > ul:first-child {
+    width: 1000%;
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+    transform: translateX(-10%);
+
+}
+
+.jd-banner > ul:first-child > li {
+    width: 10%;
+    float: left;
+}
+
+.jd-banner > ul:first-child > li > a {
+    width: 100%;
+    display: block;
+    /* font-size: o;去除文本间隙 */
+}
+
+.jd-banner > ul:first-child > li > a > img {
+    width: 100%;
+    display: block; /* 去除文本间隙*/
+    /* vertical-align: middle;去除文本极限 */
+}
+
+.jd-banner > ul:last-child {
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    margin-left: -59px;
+}
+
+.jd-banner > ul:last-child > li {
+    width: 6px;
+    height: 6px;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+}
+
+.jd-banner > ul:last-child > li.now {
+    background: #fff;
+}
+
+.jd-banner > ul:last-child > li:nth-child(1) {
+    margin-left: 0;
+}
+
+/* 导航栏 */
+.jd-nav {
+    width: 100%;
+}
+
+.jd-nav > ul {
+    width: 100%;
+    padding: 10px 0;
+    background: #fff;
+}
+
+.jd-nav > ul > li {
+    width: 25%;
+    float: left;
+}
+
+.jd-nav > ul > li > a {
+    display: block;
+}
+
+.jd-nav > ul > li > a > img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.jd-nav > ul > li > a > p {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    padding: 6px 0;
+}
+
+/* 商品 */
+.jd-product {
+    padding: 0 5px;
+}
+
+.productBox {
+    width: 100%;
+    /*	min-height: 300px;*/
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 1px #e0e0e0;
+}
+
+.pro-title {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.no-border {
+    border-bottom: none;
+}
+
+.pro-title h3 {
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+    color: #666;
+}
+
+.pro-title h3::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+}
+
+/*掌上秒杀*/
+.sk-icon {
+    background: url(../images/seckill-icon.png) no-repeat;
+    background-size: 16px 20px;
+    width: 16px;
+    height: 20px;
+    float: left;
+    margin-top: 5px;
+}
+
+.sk-name {
+    font-size: 15px;
+    color: # #d8505c;
+    float: left;
+}
+
+.sk-time {
+    float: left;
+    margin-top: 8px;
+}
+
+.sk-time span {
+    float: left;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    background: #333;
+    color: #fff;
+    margin-left: 3px;
+    text-align: center;
+}
+
+.sk-time span:nth-child(3n) {
+    background: #fff;
+    color: #333;
+    width: 5px;
+}
+
+.jd-sk .pro-text {
+    padding-top: 10px;
+}
+
+.jd-sk .pro-text ul {
+    width: 100%;
+}
+
+.jd-sk .pro-text ul li {
+    width: 33.3333%;
+    float: left;
+    text-align: center;
+}
+
+.jd-sk .pro-text ul li a {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    border-right: 1px solid #e0e0e0;
+}
+
+.jd-sk .pro-text ul li:last-child a {
+    border-right: none;
+}
+
+.jd-sk .pro-text ul li a img {
+    width: 64%;
+}
+
+.jd-sk .pro-text ul p:first-of-type {
+    color: #F8080C;
+    padding-top: 5px;
+}
+
+.jd-sk .pro-text ul p:last-of-type {
+    text-decoration: line-through;
+}
+
+/*组合样式*/
+.w-50 {
+    width: 50%;
+    display: block;
+}
+
+.w-50 > img {
+    display: block;
+    width: 100%;
+}
+
+.b-left {
+    border-left: 1px solid #e0e0e0;
+}
+
+.b-right {
+    border-right: 1px solid #e0e0e0;
+}
+
+.b-top {
+    border-top: 1px solid #e0e0e0;
+}
+
+.b-bottom {
+    border-bottom: 1px solid #e0e0e0;
+}
